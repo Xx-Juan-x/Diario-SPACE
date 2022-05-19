@@ -1,0 +1,276 @@
+/* MÓVIL */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* HEADER */
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.tittle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-boletin-noticias-tecnologia-global-tierra_1017-33687.jpg);
+    color: white;
+    height: 80px;
+    font-size: 35px;
+    font-family: sans-serif;
+    font-weight: 700;
+    background-size: cover;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(56, 61, 211);
+    border-bottom: 5px solid rgba(46, 46, 47, 0.622);
+    height: 35px;
+    align-items: center;
+}
+
+.icon-hamburguer{
+    width: 28px;
+    margin-left: 10px;
+}
+
+span{
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: monospace;
+    margin-right: 10px;
+}
+
+a{
+color: white;
+text-decoration: none;
+font-family: monospace;
+font-weight: 400;
+font-size: 22px;
+}
+
+p{
+    color: white;
+}
+
+.description{
+    display: none;
+}
+
+/* DIARIO */
+
+main{
+    padding-top: 100px;
+    background-color: rgb(71, 97, 177);
+}
+
+section{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: space-around;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px;
+    background-color: rgb(48, 89, 172);
+    border-radius: 10px;
+}
+
+article:hover{
+    filter: opacity(.9);
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+h2{
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+article img{
+    width: 100%;
+    position: relative;
+    border-radius: 20px;
+    padding: 10px 10px;
+}
+
+article p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    font-weight: 600;
+}
+
+/* ASIDE */
+
+aside{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.aside-article{
+    padding: 20px 0;
+    border-bottom: 5px solid rgb(48, 89, 172);
+}
+
+aside p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
+}
+
+h3{
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    padding: 10px 20px;
+}
+
+.image-aside, .publicidades{
+    display: none;
+}
+
+.aside-article:hover{
+    filter: opacity(.9);
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+
+
+
+/* FOOTER */
+
+footer{
+    background-color: rgb(20, 61, 142);
+}
+
+h4{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+    padding: 0 20px 20px 20px;
+    text-align: center;
+}
+
+/* MAC */
+
+@media only screen and (min-width: 768px) {
+    /* HEADER */
+    nav{
+        display: flex;
+        justify-content: space-around;
+        padding:  20px 0;
+        width: 100%;
+    }
+    .description{
+        display: block;
+    }
+    .icon-hamburguer{
+        display: none;
+    }
+    .tittle{
+        font-size: 45px;
+    }
+
+    /* ARTICLE */
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    section{
+        display: flex;
+        width: 60%;
+        padding-top: 10px;
+    }
+
+    article{
+        background-color: rgb(71, 97, 177);
+    }
+
+    article p{
+        text-align: left;
+        font-size: 25px;
+        line-height: 2.0rem;
+    }
+
+    h2{
+        font-size: 40px;
+        text-align: left;
+    }
+
+    article h2{
+        text-align: left;
+    }
+
+    /* ASIDE */
+
+    .publicidades{
+        display: none;
+    }
+
+    .image-aside{
+        display: flex;
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    h3{
+        font-size: 30px;
+        text-align: left;
+    }
+
+    aside p{
+        font-size: 20px;
+    }
+
+    aside{
+        width: 30%;
+        padding-top: 20px;
+        border-left: 5px solid rgb(48, 89, 172);
+    }
+
+    .publicidades{
+        display: none;
+    }
+
+    h4{
+        font-size: 25px;
+    }
+}
+
+/* PC */
+
+@media only screen and (min-width: 1024px) {
+    .publicidades{
+        display: flex;
+        flex-direction: column-reverse;
+        border-radius: 10px;
+    }
+
+    .img-publicidad{
+        padding: 40px;
+    }
+
+    aside h2, aside h3, aside p{
+        text-align: center;
+    }
+
+}
