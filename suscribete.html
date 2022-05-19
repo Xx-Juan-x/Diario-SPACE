@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article</title>
+    <TItle>Suscribete a SPACE</TItle>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Seal_of_the_United_States_Space_Force.svg/640px-Seal_of_the_United_States_Space_Force.svg.png">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos_formulario.css">
 </head>
 <body>
     <header class="container-encabezado">
@@ -22,4 +24,18 @@
             <span class="date-Diario"> 18 de Mayo del 2022</span>
         </nav>
     </header>
+
+    <div class="frm-conteiner">
+        <form>
+            <label for="">NOMBRE</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+            <label for="">APELLIDO</label>
+            <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+            <label for="">CORREO ELECTRÓNICO</label>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <label for="">CONTRASEÑA</label>
+            <input type="password" name="password" id="password" placeholder="Contraseña" required>
+            <button type="submit">SUSCRIBIRME</button>
+        </form>
+    </div>
 </body>
