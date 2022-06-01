@@ -27,15 +27,41 @@
 
     <div class="frm-conteiner">
         <form>
-            <label for="">NOMBRE</label>
-            <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
-            <label for="">APELLIDO</label>
-            <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
-            <label for="">CORREO ELECTRÓNICO</label>
-            <input type="email" name="email" id="email" placeholder="Email" required>
-            <label for="">CONTRASEÑA</label>
-            <input type="password" name="password" id="password" placeholder="Contraseña" required>
+            <div class="formulario">
+                <div class="conteiner-izquierda">
+                    <div class="conteiner-nombre flex-column">
+                        <label for="nombre">NOMBRE</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div class="conteiner-apellido flex-column">
+                        <label for="apellido">APELLIDO</label>
+                        <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+                    </div>
+                    <div class="conteiner-email flex-column">
+                        <label for="email">EMAIL </label>
+                        <input type="text" name="email" id="email" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="conteiner-derecha">
+                    <div class="conteiner-password flex-column">
+                        <label for="password">CONTRASEÑA</label>
+                        <input type="password" name="password" id="password" placeholder="Contraseña" required>
+                    </div>
+                    <div class="conteiner-telefono flex-column">
+                        <label for="telefono">TELEFONO</label>
+                        <input type="text" placeholder="Teléfono" id="telefono" name="telefono">
+                    </div>
+                    <div class="conteiner-direccion flex-column">
+                        <label for="direccion">DIRECCION</label>
+                        <input type="text" placeholder="direccion" id="direccion" name="direccion">
+                    </div>
+                </div>
+            </div>
             <button type="submit">SUSCRIBIRME</button>
         </form>
     </div>
+    <footer>
+        <h2>SPACE</h2>
+        <h4>Copiry Right: Todos los Derechos Reservados.</h4>
+    </footer>
 </body>
