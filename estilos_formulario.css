@@ -2,7 +2,7 @@ body{
     background-color: rgb(71, 97, 177);
 }
 .frm-conteiner{
-    padding-top: 150px;
+    padding: 150px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,6 +14,7 @@ form{
     background-color: rgb(85, 170, 235);
     border-radius: 10px;
     padding: 20px;
+    /*margin-bottom: 250px;*/
 }
 
 input{
@@ -51,21 +52,37 @@ button:hover{
 }
 
 @media only screen and (min-width: 1024px) {
+    .frm-conteiner{
+        align-items: center;
+    }
     .formulario{
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        /*justify-content: space-around;*/
+    }
+
+    .conteiner-izquierda{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .conteiner-derecha{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
 
     .flex-column{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
 
     label{
-        font-size: 15px;
+        font-size: 20px;
+    }
+    input{
+        padding: 10px;
     }
 }
