@@ -1,1 +1,1 @@
-GITHUB-PAGE: https://xx-juan-x.github.io/Diario-SPACE/
+GITHUB-PAGE:https://xx-juan-x.github.io/Diario-SPACE/
